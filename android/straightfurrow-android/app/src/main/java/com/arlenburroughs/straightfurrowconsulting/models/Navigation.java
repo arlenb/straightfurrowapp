@@ -17,7 +17,6 @@ public class Navigation {
 
         // Add fragmentItems here
         //TODO create frags and add them here.
-
         add("Home", HomeFragment.class);
 
         return navigationItems;
