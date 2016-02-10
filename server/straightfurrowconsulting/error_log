@@ -1,0 +1,1 @@
+[10-Feb-2016 14:33:14 America/Chicago] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'arlenb_straightfurrow'@'localhost' (using password: YES) in /home4/arlenb/public_html/straightfurrowconsulting/db_query.php on line 2
