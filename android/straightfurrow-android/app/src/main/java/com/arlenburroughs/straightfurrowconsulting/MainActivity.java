@@ -8,6 +8,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,6 +20,7 @@ import android.widget.ListView;
 
 import com.arlenburroughs.straightfurrowconsulting.fragments.ApplicationFragment;
 import com.arlenburroughs.straightfurrowconsulting.models.Navigation;
+import com.arlenburroughs.straightfurrowconsulting.tools.PasswordHasher;
 import com.arlenburroughs.straightfurrowconsulting.views.NavigationItemView;
 import com.arlenburroughs.straightfurrowconsulting.views.base.BaseLayout;
 
@@ -66,6 +68,9 @@ public class MainActivity extends AppCompatActivity{
         setNavigationItem(navigationItems.getFirst(), false);
 
         getSupportActionBar().setHomeButtonEnabled(true);
+
+        String pass = PasswordHasher.hashPassword("123456");
+        Log.i("Explore", "Hash:>" + pass + "<");
     }
 
     @Override
