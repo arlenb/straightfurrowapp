@@ -68,9 +68,6 @@ public class MainActivity extends AppCompatActivity{
         setNavigationItem(navigationItems.getFirst(), false);
 
         getSupportActionBar().setHomeButtonEnabled(true);
-
-        String pass = PasswordHasher.hashPassword("123456");
-        Log.i("Explore", "Hash:>" + pass + "<");
     }
 
     @Override
