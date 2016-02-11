@@ -8,7 +8,7 @@
 	}
  
 	$str = $_REQUEST['query'];
-        //$str = "Select * from `users`";
+    $str = "Select * from `users`";
 	$str = str_replace("+"," ",$str);//replace plus signs with spaces
 
 	$myArray = array();
