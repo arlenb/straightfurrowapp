@@ -31,8 +31,8 @@
 		exit;
 	}
 	
-	//fetch customers for the validated user.
-    $sql = "Select * from `customers` where `owner_id` = ".$id;
+	//fetch products for the validated user.
+    $sql = "Select * from `products` where `owner_id` = ".$id;
 	$myArray = array();
 	$result = $mysqli->query($sql);
 	if($result->num_rows == 0){
